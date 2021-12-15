@@ -1,0 +1,19 @@
+HELP.md
+target/
+
+### MAVEN ###
+.mvn
+mvnw
+mvnw.cmd
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### JPB ###
+.jpb
+
+### zip ###
+hexad-challenge.zip
