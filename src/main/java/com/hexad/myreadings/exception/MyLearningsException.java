@@ -1,6 +1,6 @@
 package com.hexad.myreadings.exception;
 
-public class MyLearningsException extends Exception
+public class MyLearningsException extends RuntimeException
 {
     private String errorCode;
     private String errorMessage;
