@@ -1,6 +1,7 @@
 package com.hexad.myreadings.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.hexad.myreadings.model.Member;
 
 import java.util.HashSet;
@@ -14,7 +15,7 @@ public class BookStatusDTO
 
     private int availableCount;
 
-    @JsonIgnore
+    @JsonManagedReference
     private Set<MemberDTO> borrowers = new HashSet<>();
 
     public int getBookStatusId()

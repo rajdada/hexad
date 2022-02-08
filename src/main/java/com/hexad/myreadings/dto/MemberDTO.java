@@ -1,5 +1,6 @@
 package com.hexad.myreadings.dto;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.hexad.myreadings.model.BookStatus;
 
@@ -12,7 +13,7 @@ public class MemberDTO
 
     private String memberName;
 
-    @JsonIgnore
+    @JsonBackReference
     private Set<BookStatus> borrowings = new HashSet<>();
 
     public long getMemberId()
